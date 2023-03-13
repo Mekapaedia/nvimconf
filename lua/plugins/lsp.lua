@@ -23,13 +23,32 @@ return {
                     "clangd",
                     "lua_ls",
                     "bashls",
-                    "pylsp"
+                    "pylsp",
+                    "jsonls"
                 }
             })
             require("mason-lspconfig").setup_handlers({
                 function(server_name)
                     local coq = require("coq")
-                    require("lspconfig")[server_name].setup(coq.lsp_ensure_capabilities({}))
+                    local lsp_config = {}
+                    if server_name == "pylsp" then
+                        lsp_config = {
+                            settings = {
+                                pylsp = {
+                                    plugins = {
+                                        ruff = {
+                                            enabled = true,
+                                            lineLength = 120
+                                        },
+                                        mypy = {
+                                            enabled = true,
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    end
+                    require("lspconfig")[server_name].setup(coq.lsp_ensure_capabilities(lsp_config))
                 end
             })
         end
@@ -48,8 +67,6 @@ return {
         config = function()
             require("mason-null-ls").setup({
                 ensure_installed = {
-                    "ruff",
-                    "clang-format"
                 },
                 automatic_installation = false,
                 automatic_setup = true,
