@@ -28,10 +28,10 @@ vim.opt.wrap = false
 
 vim.opt.showcmd = false
 vim.opt.showmode = false
-vim.opt.laststatus=2
+vim.opt.laststatus=0
 
 vim.opt.completeopt = {"menu", "menuone", "noselect"}
-vim.opt.shortmess = "aI"
+vim.opt.shortmess = "aIF"
 
 vim.opt.history = 1000
 vim.opt.redrawtime = 1500
