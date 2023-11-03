@@ -1,6 +1,7 @@
 return {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
+    lazy = true,
     opts = function()
         return {
             options = {
