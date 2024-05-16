@@ -29,7 +29,8 @@ return {
                 "toml",
                 "verilog",
                 "yaml",
-                "zig"
+                "zig",
+                "hare"
             },
             sync_install = false,
             auto_install = true,
