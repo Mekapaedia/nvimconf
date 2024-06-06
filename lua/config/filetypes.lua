@@ -11,3 +11,4 @@ vim.filetype.add({
         portmap = "json"
     }
 })
+vim.api.nvim_command('filetype indent off')
