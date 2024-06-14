@@ -9,6 +9,7 @@ return {
         configs.setup({
             ensure_installed = {
                 "c",
+                "cpp",
                 "lua",
                 "vim",
                 "vimdoc",
@@ -18,6 +19,9 @@ return {
                 "cpp",
                 "csv",
                 "gitignore",
+                "gitcommit",
+                "git_config",
+                "git_rebase",
                 "html",
                 "json",
                 "make",
@@ -30,6 +34,13 @@ return {
                 "verilog",
                 "yaml",
                 "zig",
+                "xml",
+                "cmake",
+                "comment",
+                "haskell",
+                "perl",
+                "printf",
+                "dot",
                 "hare"
             },
             sync_install = false,

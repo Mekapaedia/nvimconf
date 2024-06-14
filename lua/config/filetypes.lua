@@ -8,7 +8,9 @@ vim.filetype.add({
         params = "json",
         simconfig = "json",
         cfg = "yaml",
-        portmap = "json"
+        portmap = "json",
+        v = "verilog",
+        sv = "systemverilog"
     }
 })
 vim.api.nvim_command('filetype indent off')
