@@ -1,8 +1,8 @@
 return {
-    'weilbith/nvim-lsp-smag',
+    "weilbith/nvim-lsp-smag",
     lazy = true,
     event = "VeryLazy",
     dependencies = {
-        "nvim-lua/nvim-lspconfig",
+        "neovim/nvim-lspconfig",
     }
 }
