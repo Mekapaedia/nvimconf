@@ -45,6 +45,14 @@ vim.opt.undodir = undodir
 vim.opt.undolevels = 1000
 vim.opt.undoreload = 10000
 
+local swpdir = vim.fn.stdpath("data") .. "/swp"
+vim.opt.swapfile = true
+vim.opt.directory = swp
+
+local backdir = vim.fn.stdpath("data") .. "/backup"
+vim.opt.backup = true
+vim.opt.backupdir = backdir
+
 vim.opt.sessionoptions = "buffers,folds,globals,localoptions"
 
 vim.g.loaded_perl_provider=0

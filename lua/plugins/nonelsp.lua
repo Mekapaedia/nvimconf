@@ -9,7 +9,6 @@ return {
   init = function()
     local null_ls = require("null-ls")
     local sources = {
-        require("none-ls-shellcheck.diagnostics")
     }
     null_ls.setup({sources = sources})
   end
