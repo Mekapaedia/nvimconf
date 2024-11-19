@@ -41,7 +41,10 @@ return {
                 "perl",
                 "printf",
                 "dot",
-                "hare"
+                "hare",
+                "json5",
+                "hjson",
+                "jsonc"
             },
             sync_install = false,
             auto_install = true,
