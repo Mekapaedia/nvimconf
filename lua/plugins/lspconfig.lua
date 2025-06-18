@@ -54,6 +54,5 @@ return {
                 exclude = {},
             }
         }
-        lspconfig.svls.setup {}
     end
 }
